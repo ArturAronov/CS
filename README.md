@@ -3,7 +3,7 @@
 - `dotnet run`
 - .NET -> a platform
 - ASP.NET -> a framework
-- Data Types:
+- Data Types:   
 |Type		|Description		|Size (bytes) 	|.NET type	|Range								|
 |---------------|-----------------------|---------------|---------------|---------------------------------------------------------------|
 |int		|Whole Numbers		|4		|System.Int32	|-2,147,483,648<br/>to<br/>2,147,483,647			|
