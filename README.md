@@ -1,5 +1,7 @@
 # C#
 
+## Beginner
+
 - `dotnet new console / classlib / blazorserver / webapp, razor`
 - `dotnet run`
 - .NET -> a platform
@@ -45,3 +47,38 @@
 
 - String Interpolation:
   The `$` special character identifies a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When an interpolated string is resolved to a result string, items with interpolation expressions are replaced by the string representations of the expression results.
+
+- Optional parameters in methods:
+
+  ```
+  static void Main(string[] args)
+  {
+    YourMethodName("I'm hungry", "!");  // prints "I'm hungry!"
+    YourMethodName("I'm hungry");       // prints "I'm hungry."
+  }
+
+  static void YourMethodName(string message, string punctuation = ".")
+  {
+    Console.WriteLine(message + punctuation);
+  }
+  ```
+
+- Named arguments in methods:
+  Named arguments are required when you have more than one optional parameter in the method, to accurately assign a value for the right argument.
+  ```
+  static void YourMethodName(int a = 0, int b = 0, int c = 0, int d = 0, int e = 0) {...}
+  YourMethodName(d: 4, b: 1, a: 2);
+  YourMethodName(d: 4, 2, 1) // Error!
+  ```
+- Method / Member Overloading:
+  Member overloading means creating two or more members on the same type that differ only in the number or type of parameters but have the same name. For example, in the following, the WriteLine method is overloaded:
+  ```
+  public static class Console
+  {
+    public void WriteLine();
+    public void WriteLine(string value);
+    public void WriteLine(bool value);
+    ...
+  }
+  ```
+  Because only methods, constructors, and indexed properties can have parameters, only those members can be overloaded.
