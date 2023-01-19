@@ -18,11 +18,13 @@
   |string |Sequence of Chars |2 per char |System.String |N/A |
 - Converting types
   When converting types C# checks to make sure that when we convert data types from one to another that we’re not losing any data, because that could cause problems in our code. Therefore, we can't convert from `double` to `int`, but can convert from `int` to `double`.
+
   ```
   // This won't work
   double myDouble = 3.2;
   int myInt = myDouble;
   ```
+
   - _implicit_ conversion: happens automatically if no data will be lost in the conversion. That’s why it’s possible to convert an int (which can hold less data) to a double (which can hold more), but not the other way around.
     ```
     int myInt = 3;
@@ -34,3 +36,8 @@
     int myInt = (int)myDouble;
     ```
   - _Built-in converting methods_: https://learn.microsoft.com/en-us/dotnet/api/system.convert?view=netframework-4.7.2
+
+- Numbers:
+  - Float (32bits) - 7 digits
+  - Double (64bits) - 15 digits
+  - Decimal (128bits) - 28 digits
