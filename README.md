@@ -38,6 +38,10 @@
   - _Built-in converting methods_: https://learn.microsoft.com/en-us/dotnet/api/system.convert?view=netframework-4.7.2
 
 - Numbers:
+
   - Float (32bits) - 7 digits
   - Double (64bits) - 15 digits
   - Decimal (128bits) - 28 digits
+
+- String Interpolation:
+  The `$` special character identifies a string literal as an _interpolated string_. An interpolated string is a string literal that might contain _interpolation expressions_. When an interpolated string is resolved to a result string, items with interpolation expressions are replaced by the string representations of the expression results.
