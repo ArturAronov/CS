@@ -30,3 +30,21 @@
 //     }
 //   }
 // }
+
+
+// Example 3: Conversion:
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/learn-csharp-module-ii/lessons/csharp-data-types-variables/exercises/converting-data-types-csharp
+
+// namespace FavoriteNumber
+// {
+//   class Program
+//   {
+//     static void Main(string[] args)
+//     {
+//       Console.Write("Enter your favorite number!: ");
+//       int faveNumber = Convert.ToInt32(Console.ReadLine());
+//     }
+//   }
+// }
+
+
