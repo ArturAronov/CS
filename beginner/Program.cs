@@ -75,18 +75,40 @@
 // Example 4: String Interpolation:
 // https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/learn-csharp-module-ii/lessons/csharp-working-with-text/exercises/string-interpolation-csharp
 
-namespace StoryTime
-{
-  class Program
-  {
-    static void Main(string[] args)
-    {
-      string beginning = "Once upon a time,";
-      string middle = "the kid climbed a tree";
-      string end = "everyone lived happily ever after.";
-      string story = $"{beginning} {middle} {end}";
+// namespace StoryTime
+// {
+//   class Program
+//   {
+//     static void Main(string[] args)
+//     {
+//       string beginning = "Once upon a time,";
+//       string middle = "the kid climbed a tree";
+//       string end = "everyone lived happily ever after.";
+//       string story = $"{beginning} {middle} {end}";
 
-      Console.WriteLine(story);
-    }
-  }
-}
+//       Console.WriteLine(story);
+//     }
+//   }
+// }
+
+
+// Example 5: Parts of String
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/learn-csharp-module-ii/lessons/csharp-working-with-text/exercises/get-parts-of-strings
+
+// namespace DNA
+// {
+//   class Program
+//   {
+//     static void Main(string[] args)
+//     {
+//       string startStrand = "ATGCGATGAGCTTAC";
+//       int tga = startStrand.IndexOf("TGA");
+//       int startPoint = 0;
+//       int length = tga + 3;
+//       string dna = startStrand.Substring(startPoint, length);
+
+//       Console.WriteLine(dna);
+//       Console.WriteLine(dna[3]);
+//     }
+//   }
+// }
