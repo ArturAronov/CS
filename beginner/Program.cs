@@ -70,3 +70,23 @@
 //     }
 //   }
 // }
+
+
+// Example 4: String Interpolation:
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/learn-csharp-module-ii/lessons/csharp-working-with-text/exercises/string-interpolation-csharp
+
+namespace StoryTime
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string beginning = "Once upon a time,";
+      string middle = "the kid climbed a tree";
+      string end = "everyone lived happily ever after.";
+      string story = $"{beginning} {middle} {end}";
+
+      Console.WriteLine(story);
+    }
+  }
+}
