@@ -63,7 +63,7 @@
 //       double journeyToJupiter = 6.142466;
 //       double newEarthAge = userAge + journeyToJupiter;
 //       double newJupiterAge = newEarthAge / jupiterYears;
-
+// 
 //       Console.WriteLine(jupiterAge);    //5.817875210792581
 //       Console.WriteLine(newEarthAge);   //75.142466
 //       Console.WriteLine(newJupiterAge); //6.335789713322091
@@ -85,7 +85,7 @@
 //       string middle = "the kid climbed a tree";
 //       string end = "everyone lived happily ever after.";
 //       string story = $"{beginning} {middle} {end}";
-
+// 
 //       Console.WriteLine(story);
 //     }
 //   }
@@ -106,9 +106,28 @@
 //       int startPoint = 0;
 //       int length = tga + 3;
 //       string dna = startStrand.Substring(startPoint, length);
-
+// 
 //       Console.WriteLine(dna);
 //       Console.WriteLine(dna[3]);
+//     }
+//   }
+// }
+
+
+// Example 6: Defining methods:
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/csharp-methods/lessons/csharp-method-calls-and-input/exercises/define-parameters
+
+// namespace DefineAMethod
+// {
+//   class Program
+//   {
+//     static void YourMethodName(string identity, int age) 
+//     {
+//       Console.WriteLine($"{identity} is {age} years old.");
+//     }
+//     static void Main(string[] args)
+//     {
+//       YourMethodName("Artur", 35);
 //     }
 //   }
 // }
