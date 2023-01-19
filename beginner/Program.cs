@@ -131,3 +131,38 @@
 //     }
 //   }
 // }
+
+
+// Example 7: Method overloading:
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/csharp-methods/lessons/csharp-method-calls-and-input/exercises/method-overloading
+
+// namespace MethodOverloading
+// {
+//   class Program
+//   {
+//     static void NamePets()
+//     {
+//       Console.WriteLine("Aw, you have no spacefaring pets :(");
+//     }
+
+//     static void NamePets(string name1, string name2)
+//     {
+//       Console.WriteLine($"Your pets {name1} and {name2} will be joining your voyage across space!");
+//     }
+
+//     static void NamePets(string name1, string name2, string name3)
+//     {
+//       Console.WriteLine($"Your pets {name1}, {name2} and {name3} will be joining your voyage across space!");
+//     }
+
+//     static void Main(string[] args)
+//     {
+//       NamePets();
+//       NamePets("Laika", "Albert");
+//       NamePets("Mango", "Puddy", "Bucket");
+//       // Aw, you have no spacefaring pets :(
+//       // Your pets Laika and Albert will be joining your voyage across space!
+//       // Your pets Mango, Puddy and Bucket will be joining your voyage across space!
+//     }
+//   }
+// }
