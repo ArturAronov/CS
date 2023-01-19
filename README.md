@@ -24,13 +24,13 @@
   int myInt = myDouble;
   ```
   - _implicit_ conversion: happens automatically if no data will be lost in the conversion. That’s why it’s possible to convert an int (which can hold less data) to a double (which can hold more), but not the other way around.
-  ```
-  int myInt = 3;
-  double myDouble = myInt;
-  ```
+    ```
+    int myInt = 3;
+    double myDouble = myInt;
+    ```
   - _explicit_ conversion: requires a cast operator to convert a data type into another one. So if we do want to convert a double to an int, we could use the operator (int).
-  ```
-  double myDouble = 3.2;
-  int myInt = (int)myDouble;
-  ```
+    ```
+    double myDouble = 3.2;
+    int myInt = (int)myDouble;
+    ```
   - _Built-in converting methods_: https://learn.microsoft.com/en-us/dotnet/api/system.convert?view=netframework-4.7.2
