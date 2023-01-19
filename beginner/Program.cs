@@ -48,3 +48,25 @@
 // }
 
 
+// Example 4: Numbers and calculations:
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/learn-csharp-module-ii/lessons/csharp-working-with-numbers/exercises/arithmetic-operators-csharp
+
+// namespace PlanetCalculations
+// {
+//   class Program
+//   {
+//     static void Main(string[] args)
+//     {
+//       int userAge = 69;
+//       double jupiterYears = 11.86;
+//       double jupiterAge = userAge / jupiterYears;
+//       double journeyToJupiter = 6.142466;
+//       double newEarthAge = userAge + journeyToJupiter;
+//       double newJupiterAge = newEarthAge / jupiterYears;
+
+//       Console.WriteLine(jupiterAge);    //5.817875210792581
+//       Console.WriteLine(newEarthAge);   //75.142466
+//       Console.WriteLine(newJupiterAge); //6.335789713322091
+//     }
+//   }
+// }
