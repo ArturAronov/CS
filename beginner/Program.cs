@@ -166,3 +166,24 @@
 //     }
 //   }
 // }
+
+
+// Example 8:
+// namespace OutExample
+// {
+//   class Program
+//   {
+//     static void Example(out int num)
+//     {
+//       num = 42069;
+//     }
+//     static void Main(string[] args)
+//     {
+//       // int initializeInMethod;
+//       // Example(out initializeInMethod);
+//       // or
+//       Example(out int initializeInMethod);
+//       Console.WriteLine(initializeInMethod);
+//     }
+//   }
+// }
