@@ -144,17 +144,17 @@
 //     {
 //       Console.WriteLine("Aw, you have no spacefaring pets :(");
 //     }
-
+// 
 //     static void NamePets(string name1, string name2)
 //     {
 //       Console.WriteLine($"Your pets {name1} and {name2} will be joining your voyage across space!");
 //     }
-
+// 
 //     static void NamePets(string name1, string name2, string name3)
 //     {
 //       Console.WriteLine($"Your pets {name1}, {name2} and {name3} will be joining your voyage across space!");
 //     }
-
+// 
 //     static void Main(string[] args)
 //     {
 //       NamePets();
@@ -169,6 +169,8 @@
 
 
 // Example 8:
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/csharp-methods/lessons/csharp-method-output/exercises/out
+
 // namespace OutExample
 // {
 //   class Program
@@ -188,6 +190,30 @@
 //   }
 // }
 
+// namespace OutParameters
+// {
+//   class Program
+//   {
+//     static void Main(string[] args)
+//     {
+//       string ageAsString = "102";
+//       string nameAsString = "Granny";
+//       int ageAsInt;
+//       int nameAsInt;
+//       bool outcome;
+//       bool outcome2;
+// 
+//       outcome = Int32.TryParse(ageAsString, out ageAsInt);
+//       outcome2 = Int32.TryParse(nameAsString, out nameAsInt);
+// 
+//       Console.WriteLine(outcome);
+//       Console.WriteLine(ageAsInt);
+//       Console.WriteLine(outcome2);
+//       Console.WriteLine(nameAsInt);
+//     }
+//   }
+// }
+
 // Example 9: Return String:
 // https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/csharp-methods/lessons/csharp-method-output/exercises/return
 
@@ -199,7 +225,7 @@
 //     {
 //       return $"*.*.*Welcome to {input}*.*.*";
 //     }
-
+// 
 //     static void Main(string[] args)
 //     {
 //       string output = DecoratePlanet("Jupiter");
