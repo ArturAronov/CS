@@ -72,6 +72,7 @@
   ```
 - Method / Member Overloading:
   Member overloading means creating two or more members on the same type that differ only in the number or type of parameters but have the same name. For example, in the following, the WriteLine method is overloaded:
+
   ```
   public static class Console
   {
@@ -81,4 +82,12 @@
     ...
   }
   ```
+
   Because only methods, constructors, and indexed properties can have parameters, only those members can be overloaded.
+
+- `out`
+  The `out` keyword causes arguments to be passed by reference. It makes the formal parameter as alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. It's like a `ref` keyword, except that `ref` requires that the variable be initialized before it's passed. It is also like the `in` keyword, except that `in` does not allow the called method to modify the argument value. To use an `out` parameter, both the method definition and the calling method must explicitly use the `out` keyword.
+
+  The `in`, `ref`, and `out` keywords are not considered part of the method signature for the purpose of overload resolution. Therefore, methods cannot be overloaded if the only difference is that one method takes a `ref` or `in` argument and the other takes an `out` argument.
+
+  Overloading is legal, however, if one method takes a `ref`, `in`, or `out` argument and the other has none of those modifiers
