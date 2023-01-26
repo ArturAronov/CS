@@ -217,19 +217,19 @@
 // Example 9: Return String:
 // https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/csharp-methods/lessons/csharp-method-output/exercises/return
 
-// namespace Return
-// {
-//   class Program
-//   {
-//     static string DecoratePlanet(string input)
-//     {
-//       return $"*.*.*Welcome to {input}*.*.*";
-//     }
-// 
-//     static void Main(string[] args)
-//     {
-//       string output = DecoratePlanet("Jupiter");
-//       Console.WriteLine(output);
-//     }
-//   }
-// }
+namespace Return
+{
+  class Program
+  {
+    static string DecoratePlanet(string input)
+    {
+      return $"*.*.*Welcome to {input}*.*.*";
+    }
+
+    static void Main(string[] args)
+    {
+      string output = DecoratePlanet("Jupiter");
+      Console.WriteLine(output);
+    }
+  }
+}
