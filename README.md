@@ -116,19 +116,20 @@
 
   This type of definition can only be used when a method contains one expression. This helps us remember the name: _expression_-bodied definitions are method definitions with one _expression_.
 
-- Methods as Arguments"
+- Methods as Arguments & Lambda Expressions:
+  **lambda expression:**
 
   ```
   namespace Test
   {
-  class Program
-  {
-    static void Main(string[] args)
+    class Program
     {
-      int[] numbers = { 1, 3, 5, 6, 7, 8 };
-      Console.WriteLine(Array.Exists(numbers, element => element % 2 == 0));
+      static void Main(string[] args)
+      {
+        int[] numbers = { 1, 3, 5, 6, 7, 8 };
+        Console.WriteLine(Array.Exists(numbers, element => element % 2 == 0));
+      }
     }
-  }
   }
   ```
 
