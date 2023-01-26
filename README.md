@@ -155,16 +155,25 @@
 ## Advanced
 
 - Array Declaration:
+
   ```
     int[] luckyNumbers = { 13, 88, 420 };
   ```
+
   _or:_
+
   ```
   int[] luckyNumbers;
   luckyNumbers = new int[] { 13, 88, 420 };
   ```
+
   _or:_
+
   ```
   // luckyNumbers will be equal to [0, 0, 0]
   int[] luckyNumbers = new int[3];
   ```
+
+- Fields:
+  A field is a variable of any type that is declared directly in a class or struct. Fields are members of their containing type.
+  It is common practice to name fields using all lowercase (`name` instead of `Name`).
