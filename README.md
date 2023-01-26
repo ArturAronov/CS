@@ -92,8 +92,8 @@
 
   Overloading is legal, however, if one method takes a `ref`, `in`, or `out` argument and the other has none of those modifiers
 
-- Expression-bodied Definitions
-  From:
+- Expression-bodied Definitions:
+  **from:**
 
   ```
   bool IsEven(int num)
@@ -102,8 +102,50 @@
   }
   ```
 
-  to
+  **to:**
 
   ```
   bool isEven(int num) => num % 2 == 0;
+  ```
+
+  This also works for methods that return nothing, aka `void`:
+
+  ```
+  void Shout(string x) => Console.WriteLine(x.ToUpperCase());
+  ```
+
+  This type of definition can only be used when a method contains one expression. This helps us remember the name: _expression_-bodied definitions are method definitions with one _expression_.
+
+- Methods as Arguments"
+
+  ```
+  namespace Test
+  {
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int[] numbers = { 1, 3, 5, 6, 7, 8 };
+      Console.WriteLine(Array.Exists(numbers, element => element % 2 == 0));
+    }
+  }
+  }
+  ```
+
+  **method as argument:**
+
+  ```
+  namespace Test
+  {
+    class Program
+    {
+      static bool IsEven(int num) => num % 2 == 0;
+
+      static void Main(string[] args)
+      {
+        int[] numbers = { 1, 3, 5, 6, 7, 8 };
+        Console.WriteLine(Array.Exists(numbers, IsEven));
+      }
+    }
+  }
   ```
