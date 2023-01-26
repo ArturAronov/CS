@@ -117,6 +117,7 @@
   This type of definition can only be used when a method contains one expression. This helps us remember the name: _expression_-bodied definitions are method definitions with one _expression_.
 
 - Methods as Arguments & Lambda Expressions:
+
   **lambda expression:**
 
   ```
@@ -149,4 +150,21 @@
       }
     }
   }
+  ```
+
+## Advanced
+
+- Array Declaration:
+  ```
+    int[] luckyNumbers = { 13, 88, 420 };
+  ```
+  _or:_
+  ```
+  int[] luckyNumbers;
+  luckyNumbers = new int[] { 13, 88, 420 };
+  ```
+  _or:_
+  ```
+  // luckyNumbers will be equal to [0, 0, 0]
+  int[] luckyNumbers = new int[3];
   ```
