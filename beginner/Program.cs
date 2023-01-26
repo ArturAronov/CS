@@ -217,19 +217,38 @@
 // Example 9: Return String:
 // https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/csharp-methods/lessons/csharp-method-output/exercises/return
 
-namespace Return
-{
-  class Program
-  {
-    static string DecoratePlanet(string input)
-    {
-      return $"*.*.*Welcome to {input}*.*.*";
-    }
+// namespace Return
+// {
+//   class Program
+//   {
+//     static string DecoratePlanet(string input)
+//     {
+//       return $"*.*.*Welcome to {input}*.*.*";
+//     }
+//
+//     static void Main(string[] args)
+//     {
+//       string output = DecoratePlanet("Jupiter");
+//       Console.WriteLine(output);
+//     }
+//   }
+// }
 
-    static void Main(string[] args)
-    {
-      string output = DecoratePlanet("Jupiter");
-      Console.WriteLine(output);
-    }
-  }
-}
+
+// Example 10: Methods as Arguments
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-beginner-c-sharp/modules/csharp-methods/lessons/csharp-alternate-expressions/exercises/methods-as-arguments
+
+// namespace AlternateExpressions
+// {
+//   class Program
+//   {
+//     public static bool IsLong(string word) => word.Length > 8;
+//
+//     static void Main(string[] args)
+//     {
+//       string[] adjectives = { "rocky", "mountainous", "cosmic", "extraterrestrial" };
+//       string firstLongAdjective = Array.Find(adjectives, IsLong)!;
+//       Console.WriteLine($"The first long word is: {firstLongAdjective}.");
+//     }
+//   }
+// }
