@@ -189,4 +189,24 @@
     - _read-only_ (they have a `get` accessor but no `set` accessor)
     - _write-only_ (they have a `set` accessor, but no `get` accessor).  
       Write-only properties are rare and are most commonly used to restrict access to sensitive data.
-  - Simple properties that require no custom accessor code can be implemented either as expression body definitions or as auto-implemented properties (such as Example 3).
+  - Simple properties that require no custom accessor code can be implemented either as expression body definitions or as auto-implemented properties.
+
+- Automatic Properties:
+
+For `get` and `set` that have no inherit values, automatic properties can be used.
+**from:**
+
+```
+public string size;
+public string Size
+{
+  get { return size; }
+  set { size = value; }
+}
+```
+
+**to:**
+
+```
+public string Size { get; set; }
+```
