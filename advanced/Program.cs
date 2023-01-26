@@ -49,3 +49,40 @@
 //     }
 //   }
 // }
+
+
+// Example 3: Fields:
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-intermediate-c-sharp/modules/learn-csharp-classes/lessons/csharp-basic-classes/exercises/fields
+
+// Forest.cs
+// namespace BasicClasses
+// {
+//   class Forest
+//   {
+//     public string name;
+//     public string biome;
+//     public int trees;
+//     public int age;
+//   }
+// }
+//
+// Main.cs
+// namespace BasicClasses
+// {
+//   class Program
+//   {
+//     static void Main(string[] args)
+//     {
+//       Forest f = new Forest();
+//       f.name = "Forest";
+//       f.biome = "No idea what that is";
+//       f.trees = 420;
+//       f.age = 100;
+
+//       Console.WriteLine(f.name);
+//       Console.WriteLine(f.biome);
+//       Console.WriteLine(f.trees);
+//       Console.WriteLine(f.age);
+//     }
+//   }
+// }
