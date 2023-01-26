@@ -175,11 +175,14 @@
   ```
 
 - Fields:
+
   A field is a variable of any type that is declared directly in a class or struct. Fields are members of their containing type.
   It is common practice to name fields using all lowercase (`name` instead of `Name`).
 
 - Properties:
+
   A property is a member that provides a flexible mechanism to read, write, or compute the value of a private field. Properties can be used as if they're public data members, but they're special methods called accessors. This feature enables data to be accessed easily and still helps promote the safety and flexibility of methods.
+
   - A `get` property accessor is used to return the property value, and a `set` property accessor is used to assign a new value.
   - The `value` keyword is used to define the value being assigned by the `set` or `init` accessor.
   - Properties can be _read-write_ (they have both a `get` and a `set` accessor)
