@@ -329,3 +329,27 @@ public string Size { get; set; }
       Console.WriteLine("Country property not specified. Value defaulted to 'Unknown'.");
     }
     ```
+
+- `static`:
+
+  ```
+  class Forest
+  {
+    private static string definition;
+    public static string Definition
+    {
+      get { return definition; }
+      set { definition = value; }
+    }
+  }
+  ```
+
+  `static` means “associated with the class, not an instance”. Thus any static member is accessed from the class, not an instance:
+
+  ```
+  // this will return an error
+  static void Main(string[] args)
+  {
+    Console.WriteLine(Forest.Definition);
+  }
+  ```
