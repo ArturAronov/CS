@@ -66,7 +66,7 @@
 //   }
 // }
 //
-// <== Main.cs ==>
+// <== Program.cs ==>
 // namespace BasicClasses
 // {
 //   class Program
@@ -127,7 +127,7 @@
 //   }
 // }
 // 
-// <== Main.cs ==>
+// <== Program.cs ==>
 // namespace BasicClasses
 // {
 //   class Program
@@ -142,6 +142,90 @@
 // 
 //       Console.WriteLine(f.Name);
 //       Console.WriteLine(f.Biome);
+//     }
+//   }
+// }
+
+
+// Example 5: Classes & Objects:    
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-intermediate-c-sharp/modules/learn-csharp-classes/lessons/csharp-basic-classes/exercises/basic-review
+
+// <== Forest.cs ==>
+// namespace BasicClasses
+// {
+//   class Forest
+//   {
+//     public int age;
+//     private string biome;
+// 
+//     public Forest(string name, string biome)
+//     {
+//       this.Name = name;
+//       this.Biome = biome;
+//       Age = 0;
+//     }
+// 
+//     public Forest(string name) : this(name, "Unknown")
+//     { }
+// 
+//     public string Name
+//     { get; set; }
+// 
+//     public int Trees
+//     { get; set; }
+// 
+//     public string Biome
+//     {
+//       get { return biome; }
+//       set
+//       {
+//         if (value == "Tropical" ||
+//             value == "Temperate" ||
+//             value == "Boreal")
+//         {
+//           biome = value;
+//         }
+//         else
+//         {
+//           biome = "Unknown";
+//         }
+//       }
+//     }
+// 
+//     public int Age
+//     {
+//       get { return age; }
+//       private set { age = value; }
+//     }
+// 
+//     public int Grow()
+//     {
+//       Trees += 30;
+//       Age += 1;
+//       return Trees;
+//     }
+// 
+//     public int Burn()
+//     {
+//       Trees -= 20;
+//       Age += 1;
+//       return Trees;
+//     }
+//   }
+// }
+
+// <== Program.cs ==>
+// namespace BasicClasses
+// {
+//   class Program
+//   {
+//     static void Main(string[] args)
+//     {
+//       Forest amazon = new Forest("Amazon");
+// 
+//       Console.WriteLine(amazon.Trees);
+//       Console.WriteLine(amazon.Grow());
+//       Console.WriteLine(amazon.Trees);
 //     }
 //   }
 // }
