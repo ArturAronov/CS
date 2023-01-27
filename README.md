@@ -224,7 +224,9 @@ public string Size { get; set; }
   `private` - a private member can only be accessed by bode in the same class
 
 - Get-Only property:
+
   If we want programs to get the value of property, byt we don't want programs to set value of the property. Then we either:
+
   - don't include `set()` method, or
     ```
     public string Area
@@ -240,3 +242,37 @@ public string Size { get; set; }
       private set { area = value; }
     }
     ```
+
+- Constructors:
+
+  So far, we created a new object and set the property values one by one. It would be nice if we could write a method that’s run every time an object is created to set those values at once. This is where constructors come to play.
+
+  ```
+  class Forest
+  {
+    public int Area;
+
+    public Forest(int area)
+    {
+      Area = area;
+    }
+  }
+  ```
+
+- `this`:  
+  It’s good to be explicit when writing code so that there is no room for misinterpretation. We can refer to the current instance of a class with the `this` keyword.
+
+  ```
+  class Forest
+  {
+    public int Area
+    { /* property omitted */ }
+
+    public Forest(int area)
+    {
+      this.Area = area;
+    }
+  }
+  ```
+
+  `this.Area = area` means “when this constructor is used to make a new instance, use the argument `area` to set the value of this new instance’s `Area` field”.
