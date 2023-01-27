@@ -174,6 +174,12 @@
   int[] luckyNumbers = new int[3];
   ```
 
+- Introduction to classes:
+
+  - A custom data type is defined by a _class_.
+  - An _instance_ of a class is called an _object_. Multiple, unique objects can be instantiated from the class.
+  - The process of bundling related data and methods into a type is called _encapsulation_, and it makes code easier to organize and reuse.
+
 - Fields:
 
   A field is a variable of any type that is declared directly in a class or struct. Fields are members of their containing type.
