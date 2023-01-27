@@ -223,9 +223,9 @@
 //     {
 //       Forest amazon = new Forest("Amazon");
 // 
-//       Console.WriteLine(amazon.Trees);
-//       Console.WriteLine(amazon.Grow());
-//       Console.WriteLine(amazon.Trees);
+//       Console.WriteLine(amazon.Trees);   // returns 0
+//       Console.WriteLine(amazon.Grow());  // returns 30
+//       Console.WriteLine(amazon.Trees);   // returns 30
 //     }
 //   }
 // }
