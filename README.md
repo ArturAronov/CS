@@ -210,3 +210,33 @@ public string Size
 ```
 public string Size { get; set; }
 ```
+
+- Field vs. Property:
+
+  ```
+  f.Age = 32; // using property
+  f.age = -1; // using field
+  ```
+
+- Public vs. Private:
+
+  `public` - a public member that can be accessed by any class
+  `private` - a private member can only be accessed by bode in the same class
+
+- Get-Only property:
+  If we want programs to get the value of property, byt we don't want programs to set value of the property. Then we either:
+  - don't include `set()` method, or
+    ```
+    public string Area
+    {
+      get { return area; }
+    }
+    ```
+  - make the `set()` method private
+    ```
+    public int Area
+    {
+      get { return area; }
+      private set { area = value; }
+    }
+    ```
