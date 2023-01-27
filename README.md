@@ -276,3 +276,50 @@ public string Size { get; set; }
   ```
 
   `this.Area = area` means “when this constructor is used to make a new instance, use the argument `area` to set the value of this new instance’s `Area` field”.
+
+- Overloading Constructors:
+
+  Just like other methods, constructors can be overloaded. For example, we may want to define an additional constructor that takes one argument:
+
+  ```
+  public Forest(int area, string country)
+  {
+    this.Area = area;
+    this.Country = country;
+  }
+
+  public Forest(int area)
+  {
+    this.Area = area;
+    this.Country = "Unknown";
+  }
+  ```
+
+  Notice how we’ve written duplicate code for our second constructor: `this.Area = area;`. Later on, if we need to adjust the constructor, we’ll need to find every copy of the code and make the exact same change. That means more work and chances for errors.
+
+  We have two options to resolve this. In either case we will remove the duplicated code:
+
+  - Use default argument:
+
+    ```
+    public Forest(int area, string country = "Unknown")
+    {
+      this.Area = area;
+      this.Country = country;
+    }
+    ```
+
+  - Use `: this()`:
+
+    ```
+    public Forest(int area, string country)
+    {
+      this.Area = area;
+      this.Country = country;
+    }
+
+    public Forest(int area) : this(area, "Unknown")
+    {
+      Console.WriteLine("Country property not specified. Value defaulted to 'Unknown'.");
+    }
+    ```
