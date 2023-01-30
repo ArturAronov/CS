@@ -377,3 +377,17 @@ public string Size { get; set; }
   ```
 
   Notice that the property and method bodies are not defined. An interface is a set of actions and values, but it doesn’t specify how they work.
+
+- Implementing an `interface`:
+
+  ```
+  class Sedan : IAutomobile
+  {
+    public string LicensePlate
+    { get; }
+
+    // and so on...
+  }
+  ```
+
+  This empty `Sedan` class “promises” to implement the `IAutomobile` interface. In other words, it must have the properties and methods the highway patrol asked for (`Speed`, `LicensePlate`, `Wheels`, and `Honk()`).
