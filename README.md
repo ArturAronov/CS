@@ -390,4 +390,4 @@ public string Size { get; set; }
   }
   ```
 
-  This empty `Sedan` class “promises” to implement the `IAutomobile` interface. In other words, it must have the properties and methods the highway patrol asked for (`Speed`, `LicensePlate`, `Wheels`, and `Honk()`).
+  This `Sedan` class “promises” to implement the `IAutomobile` interface. In other words, it must have the properties and methods the highway patrol asked for (`Speed`, `LicensePlate`, `Wheels`, and `Honk()`).
