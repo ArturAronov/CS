@@ -229,3 +229,83 @@
 //     }
 //   }
 // }
+
+
+// Example 6: Interface
+// https://www.codecademy.com/paths/build-web-apps-with-asp-net/tracks/build-web-apps-asp-net-intermediate-c-sharp/modules/learn-csharp-interfaces-inheritance/lessons/csharp-interfaces/exercises/finish-truck-class
+
+// <== IAutomobile.cs ==>
+// namespace LearnInterfaces
+// {
+//   interface IAutomobile
+//   {
+//     string LicensePlate { get; }
+//     double Speed { get; }
+//     int Wheels { get; }
+//     void Honk();
+//   }
+// }
+
+// <== Truck.cs ==>
+// namespace LearnInterfaces
+// {
+//   class Truck : IAutomobile
+//   {
+//   	public string LicensePlate
+//     { get; protected set; }
+// 
+//     public double Speed
+//     { get; protected set; }
+// 
+//     public int Wheels
+//     { get; protected set; }
+// 
+//     public double Weight
+//     { get; protected set; }
+// 
+//     public Truck(double speed, double weight)
+//     {
+//       Speed = speed;
+//       Weight = weight;
+//       LicensePlate = Tools.GenerateLicensePlate();
+//       Wheels = weight < 400 ? 8 : 12;
+//     }
+// 
+//     public void Honk()
+//     {
+//       Console.WriteLine("HONK!");
+//     }
+// 
+//     public void SpeedUp()
+//     {
+//       Speed += 5;
+//     }
+// 
+//     public void SlowDown()
+//     {
+//       Speed -= 5;
+//     }
+//   }
+// }
+
+// <== Main.cs ==>
+// namespace LearnInterfaces
+// {
+//   class Program
+//   {
+//     static void Main(string[] args)
+//     {
+//       Sedan seddy = new Sedan(60);
+//       Truck trucky = new Truck(45, 500);
+// 
+//       Console.WriteLine(trucky.Speed);          // 45
+//       Console.WriteLine(trucky.Wheels);         // 12
+//       Console.WriteLine(trucky.LicensePlate);   // BC4WFCVF
+//       Console.WriteLine(trucky.Weight);         // 500
+// 
+//       trucky.SpeedUp();
+//  
+//       Console.WriteLine(trucky.Speed);          // 50
+//     }
+//   }
+// }
