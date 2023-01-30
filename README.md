@@ -353,3 +353,27 @@ public string Size { get; set; }
     Console.WriteLine(Forest.Definition);
   }
   ```
+
+- `interface`
+  The interface is a set of properties, methods, and other members. They are declared with a signature but their behaviors are not defined. A class _implements_ an interface if it defines those properties, methods, and other members.  
+  Every interface should have a name starting with “I”
+
+  The skeleton of an interface looks a bit like a class:
+
+  ```
+  interface IAutomobile
+  {
+  }
+  ```
+
+  We can add members, like properties and methods, to the interface. Here’s an example of a fake property and method:
+
+  ```
+  interface IAutomobile
+  {
+    string Id { get; }
+    void Vroom();
+  }
+  ```
+
+  Notice that the property and method bodies are not defined. An interface is a set of actions and values, but it doesn’t specify how they work.
